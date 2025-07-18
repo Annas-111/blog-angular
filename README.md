@@ -82,7 +82,9 @@ export const environment = {
   publicApiKey: 'abc', // Used for accessing public APIs same as you set in backend
 };
 
-### 🖥️ Backend Setup
+### ⚙️ Backend Setup (NestJS)
+
+### 🧪 Manual (Development)
 
 ```bash
 cd backend
@@ -92,3 +94,9 @@ npm run start:dev  # Runs the NestJS app in development mode
 ### Environments Variables
 
 See the .env.example in /backend
+
+### Docker (Recommended)
+
+# From the root of the project (where docker-compose.yml is located)
+docker compose up --build
+
