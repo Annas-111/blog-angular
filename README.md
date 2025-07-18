@@ -82,7 +82,6 @@ export const environment = {
   publicApiKey: 'abc', // Used for accessing public APIs same as you set in backend
 };
 
-
 ### 🖥️ Backend Setup
 
 ```bash
