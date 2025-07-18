@@ -1,6 +1,6 @@
 # 📰 Blog App – Angular + NestJS
 
-This is a full-stack blog application built with **Angular 17** (Sakai-NG + PrimeNG) and **NestJS + PostgreSQL**. It features **passwordless email OTP authentication**, protected routes, and a responsive UI for viewing and creating blog posts.
+This is a full-stack blog application built with **Angular 17** (Sakai-NG + PrimeNG) and **NestJS + PostgreSQL**. It features **passwordless email OTP authentication**, protected routes.
 
 ---
 
@@ -70,3 +70,26 @@ This is a full-stack blog application built with **Angular 17** (Sakai-NG + Prim
 cd frontend
 npm install
 npm run dev  # or ng serve
+
+### Environments Variables
+
+Create a file at src/environments/environment.ts and add your API settings. Use the structure below:
+
+// src/environments/environment.ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000', // Backend URL
+  publicApiKey: 'abc', // Used for accessing public APIs same as you set in backend
+};
+
+
+### 🖥️ Backend Setup
+
+```bash
+cd backend
+npm install
+npm run start:dev  # Runs the NestJS app in development mode
+
+### Environments Variables
+
+See the .env.example in /backend
