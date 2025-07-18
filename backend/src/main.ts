@@ -9,7 +9,7 @@ async function bootstrap() {
     credentials: true, // if you're sending cookies (optional)
   });
 
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
 }
 bootstrap();
 
